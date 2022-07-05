@@ -85,8 +85,8 @@ var transporter = nodemailer.createTransport({
 
 
 //import nodemailer from 'nodemailer';
+const PORT = process.env.PORT || 3000;
 
+app.listen(PORT, () => console.log(`Server is listening on port ${PORT}...`));
 
-app.listen(3000, function () {
-    console.log("Listening to port 3000" );
-}); //creating a port
+ //creating a port
