@@ -66,7 +66,7 @@ var transporter = nodemailer.createTransport({
     to: email,
     subject: 'Happy 2022 '+fname,
     text:  'CLick on the link to view the wish from '+yname, 
-    html: '<b><a href="https://wish2022.herokuapp.com/preview">Click Here</a> </b>' 
+    html: '<b><a href="https://wish2022.herokuapp.com/preview">Click Here to view the wish from '+yname+'</a> </b>' 
    /* html: '<a href="http://localhost:3000/preview"></a>'*/
  }
   
