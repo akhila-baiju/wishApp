@@ -49,8 +49,8 @@ app.get('/preview', function (req, res) {
 var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'sandraanirudh@gmail.com',
-      pass: 'lfzpinqmixabncej'
+      user: 'wishyouon2022@gmail.com',
+      pass: 'cwlomsbuzzptsfun'
     }
   });
 
@@ -62,11 +62,11 @@ var transporter = nodemailer.createTransport({
     var email=req.body.email;
   
   var mailOptions = {
-    from: 'akhila@gmail.com',
+    from: 'wishyouon2022@gmail.com',
     to: email,
     subject: 'Happy 2022 '+fname,
     text:  'CLick on the link to view the wish from '+yname, 
-    html: '<b><a href="https://wish2022.herokuapp.com/preview">Click Here to view the wish from '+yname+'</a> </b>' 
+    html: '<b>Hi '+fname+' your friend '+yname+' send you new year wishes, check it <a href="https://wish2022.herokuapp.com/preview">Click Here to view </a> </b>' 
    /* html: '<a href="http://localhost:3000/preview"></a>'*/
  }
   
