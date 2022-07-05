@@ -12,12 +12,13 @@
     <body>
         <form  method="POST" action="/mail">
         <h1>Happy 2022 from <%=yname%></h1>
-        <div>Hi <%=yname%>, 
-            Your wish to <%=fname%> is successfully created. We wish you a Happy 2022 to you.
+        <div><h1>Hi <%=yname%>, </h1>
+           <h2> Your wish to <%=fname%> is successfully created. <br>
+            Send More Wishes to your Loved ones</h2>
             <input type="hidden" name="fname" value='<%=fname%>''>
             <input type="hidden" name="yname" value='<%=yname%>''>
             <input type="hidden" name="email" value='<%=email%>''>
-        </div>
+        </div><br>
         <a href="/preview">Click Here to Preview Your Wish</a>
         <h2><button type="submit">Click here to send Email to <%=email%></button></a></h2>
     </form>
